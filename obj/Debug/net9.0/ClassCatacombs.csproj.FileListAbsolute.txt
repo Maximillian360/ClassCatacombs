@@ -1,0 +1,15 @@
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\bin\Debug\net9.0\ClassCatacombs.exe
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\bin\Debug\net9.0\ClassCatacombs.deps.json
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\bin\Debug\net9.0\ClassCatacombs.runtimeconfig.json
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\bin\Debug\net9.0\ClassCatacombs.dll
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\bin\Debug\net9.0\ClassCatacombs.pdb
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.AssemblyInfoInputs.cache
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.AssemblyInfo.cs
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.csproj.CoreCompileInputs.cache
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.sourcelink.json
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.dll
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\refint\ClassCatacombs.dll
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.pdb
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ClassCatacombs.genruntimeconfig.cache
+C:\Users\blyth\RiderProjects\ClassCatacombs\ClassCatacombs\obj\Debug\net9.0\ref\ClassCatacombs.dll
