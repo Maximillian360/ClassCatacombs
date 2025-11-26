@@ -13,3 +13,12 @@ myPoint2.Y = 0;
 
 Console.WriteLine($"{myPoint.X}, {myPoint.Y}");
 Console.WriteLine($"{myPoint2.X}, {myPoint2.Y}");
+
+
+Color myColor = new Color(169, 87, 90);
+Color myColor2 = Color.CreateOrange();
+
+
+
+Console.WriteLine($"myColor: {myColor.Red}, {myColor.Green}, {myColor.Blue}");
+Console.WriteLine($"myColor2: {myColor2.Red}, {myColor2.Green}, {myColor2.Blue}");
