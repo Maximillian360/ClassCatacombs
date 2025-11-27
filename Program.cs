@@ -24,7 +24,7 @@ Type cardType = typeof(Card);
 foreach (CardColor color in Enum.GetValues(typeof(CardColor)))
     foreach  (CardRank rank in Enum.GetValues(typeof(CardRank)))
     {
-        var obj = Activator.CreateInstance(cardType, color, rank);
+        object obj = Activator.CreateInstance(cardType, color, rank);
         var card = (Card)obj;
         card.DisplayData();
     }
