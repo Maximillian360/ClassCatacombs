@@ -20,3 +20,12 @@ using ClassCatacombs;
 // Console.WriteLine($"myColor: {myColor.Red}, {myColor.Green}, {myColor.Blue}");
 // Console.WriteLine($"myColor2: {myColor2.Red}, {myColor2.Green}, {myColor2.Blue}");
 
+Type cardType = typeof(Card);
+foreach (CardColor color in Enum.GetValues(typeof(CardColor)))
+    foreach  (CardRank rank in Enum.GetValues(typeof(CardRank)))
+    {
+        var obj = Activator.CreateInstance(cardType, color, rank);
+        var card = (Card)obj;
+        card.DisplayData();
+    }
+

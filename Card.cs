@@ -1,19 +1,13 @@
 ﻿namespace ClassCatacombs;
 
-public class Card
+public class Card(CardColor color, CardRank rank)
 {
-    private CardRank Rank { get; set; }
-    private CardColor Color { get; set; }
-
-    public Card(CardColor color, CardRank rank)
-    {
-        Rank = rank;
-        Color = color;
-    }
-
+    private CardColor Color { get; set; } = color;
+    private CardRank Rank { get; set; } = rank;
     public void DisplayData() => Console.WriteLine($"The {Color} {Rank}");
     
 }
+
 
 public enum CardColor
 {
