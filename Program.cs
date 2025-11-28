@@ -20,12 +20,45 @@ using ClassCatacombs;
 // Console.WriteLine($"myColor: {myColor.Red}, {myColor.Green}, {myColor.Blue}");
 // Console.WriteLine($"myColor2: {myColor2.Red}, {myColor2.Green}, {myColor2.Blue}");
 
-Type cardType = typeof(Card);
-foreach (CardColor color in Enum.GetValues(typeof(CardColor)))
-    foreach  (CardRank rank in Enum.GetValues(typeof(CardRank)))
-    {
-        object obj = Activator.CreateInstance(cardType, color, rank);
-        var card = (Card)obj;
-        card.DisplayData();
-    }
+// Type cardType = typeof(Card);
+// foreach (CardColor color in Enum.GetValues(typeof(CardColor)))
+//     foreach  (CardRank rank in Enum.GetValues(typeof(CardRank)))
+//     {
+//         object obj = Activator.CreateInstance(cardType, color, rank);
+//         var card = (Card)obj;
+//         card.DisplayData();
+//     }
 
+Door myDoor = new Door();
+string userInput;
+string oldPassInput;
+string newPassInput;
+while (true)
+{
+    Console.WriteLine("Enter your desired input: 1) Close door, 2) Open door, 3) Lock door, 4) Unlock door, 5) Change door passcode: ");
+    userInput = Console.ReadLine();
+    switch (userInput)
+    {
+        case "1":
+            myDoor.Close();
+            break;
+        case "2":
+            myDoor.Open();
+            break;
+        case "3":
+            myDoor.Lock();
+            break;
+        case "4":
+            Console.WriteLine("Enter your passcode: ");
+            oldPassInput = Console.ReadLine();
+            myDoor.Unlock(oldPassInput);
+            break;
+        case "5":
+            Console.WriteLine("Enter your old passcode: ");
+            oldPassInput = Console.ReadLine();
+            Console.WriteLine("Enter your new passcode: ");
+            newPassInput =  Console.ReadLine();
+            myDoor.NewPass(oldPassInput, newPassInput);
+            break;
+    }
+}
