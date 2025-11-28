@@ -29,37 +29,43 @@ using ClassCatacombs;
 //         card.DisplayData();
 //     }
 
-string oldPassInput;
-Console.WriteLine("Type your passcode for the door: ");
-oldPassInput = Console.ReadLine();
-Door myDoor = new Door(DoorState.Closed, oldPassInput);
-while (true)
-{
-    Console.WriteLine("Enter your desired input: 1) Close door, 2) Open door, 3) Lock door, 4) Unlock door, 5) Change door passcode: ");
-    string userInput = Console.ReadLine();
-    switch (userInput)
-    {
-        case "1":
-            myDoor.Close();
-            break;
-        case "2":
-            myDoor.Open();
-            break;
-        case "3":
-            myDoor.Lock();
-            break;
-        case "4":
-            Console.WriteLine("Enter your passcode: ");
-            oldPassInput = Console.ReadLine();
-            myDoor.Unlock(oldPassInput);
-            break;
-        case "5":
-            Console.WriteLine("Enter your old passcode: ");
-            oldPassInput = Console.ReadLine();
-            Console.WriteLine("Enter your new passcode: ");
-            string newPassInput =  Console.ReadLine();
-            myDoor.NewPass(oldPassInput, newPassInput);
-            break;
-            
-    }
-}
+// string oldPassInput;
+// Console.WriteLine("Type your passcode for the door: ");
+// oldPassInput = Console.ReadLine();
+// Door myDoor = new Door(DoorState.Closed, oldPassInput);
+// while (true)
+// {
+//     Console.WriteLine("Enter your desired input: 1) Close door, 2) Open door, 3) Lock door, 4) Unlock door, 5) Change door passcode: ");
+//     string userInput = Console.ReadLine();
+//     switch (userInput)
+//     {
+//         case "1":
+//             myDoor.Close();
+//             break;
+//         case "2":
+//             myDoor.Open();
+//             break;
+//         case "3":
+//             myDoor.Lock();
+//             break;
+//         case "4":
+//             Console.WriteLine("Enter your passcode: ");
+//             oldPassInput = Console.ReadLine();
+//             myDoor.Unlock(oldPassInput);
+//             break;
+//         case "5":
+//             Console.WriteLine("Enter your old passcode: ");
+//             oldPassInput = Console.ReadLine();
+//             Console.WriteLine("Enter your new passcode: ");
+//             string newPassInput =  Console.ReadLine();
+//             myDoor.NewPass(oldPassInput, newPassInput);
+//             break;
+//             
+//     }
+// }
+
+
+PasswordValidator myPasswordValidator = new PasswordValidator("ello123");
+myPasswordValidator.PasswordValidation();
+
+
