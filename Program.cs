@@ -29,14 +29,14 @@ using ClassCatacombs;
 //         card.DisplayData();
 //     }
 
-Door myDoor = new Door();
-string userInput;
 string oldPassInput;
-string newPassInput;
+Console.WriteLine("Type your passcode for the door: ");
+oldPassInput = Console.ReadLine();
+Door myDoor = new Door(DoorState.Closed, oldPassInput);
 while (true)
 {
     Console.WriteLine("Enter your desired input: 1) Close door, 2) Open door, 3) Lock door, 4) Unlock door, 5) Change door passcode: ");
-    userInput = Console.ReadLine();
+    string userInput = Console.ReadLine();
     switch (userInput)
     {
         case "1":
@@ -57,8 +57,9 @@ while (true)
             Console.WriteLine("Enter your old passcode: ");
             oldPassInput = Console.ReadLine();
             Console.WriteLine("Enter your new passcode: ");
-            newPassInput =  Console.ReadLine();
+            string newPassInput =  Console.ReadLine();
             myDoor.NewPass(oldPassInput, newPassInput);
             break;
+            
     }
 }

@@ -58,7 +58,7 @@ public class Door (DoorState state = DoorState.Open, string passCode = "1111")
 
     public void Unlock(string passCode)
     {
-        if (State != DoorState.Locked)
+        if (State != DoorState.Locked || State == DoorState.Open)
         {
             Console.WriteLine("Door is open");
         }
@@ -75,8 +75,15 @@ public class Door (DoorState state = DoorState.Open, string passCode = "1111")
 
     public void NewPass(string oldPassInput, string newPassCode)
     {
-        if (oldPassInput == PassCode) PassCode = newPassCode;
-        else Console.WriteLine("Old passcode does not match old passcode");
+        if (oldPassInput == PassCode)
+        {
+            PassCode = newPassCode;
+            Console.WriteLine("Passcode changed");
+        }
+        else
+        {
+            Console.WriteLine("Old passcode does not match old passcode");
+        }
     }
     
 }

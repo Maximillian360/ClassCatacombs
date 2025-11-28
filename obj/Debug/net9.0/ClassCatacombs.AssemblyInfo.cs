@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassCatacombs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1e2e66d4d6af0ed813e0b4b14bf111815f9dd43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+007339bac8895862775b799b4987647424c1dc1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassCatacombs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassCatacombs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
