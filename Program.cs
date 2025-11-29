@@ -64,8 +64,13 @@ using ClassCatacombs;
 //     }
 // }
 
+while (true)
+{
+    Console.WriteLine("Please enter a password to check: ");
+    string passwordInput = Console.ReadLine() ?? String.Empty; 
+    PasswordValidator myPasswordValidator = new PasswordValidator(passwordInput);
+    myPasswordValidator.PasswordValidation();
+}
 
-PasswordValidator myPasswordValidator = new PasswordValidator("ello123");
-myPasswordValidator.PasswordValidation();
 
 
